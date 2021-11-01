@@ -1,6 +1,8 @@
 // Update with your config settings.
 require("dotenv").config();
 
+const pg = require("pg");
+
 const { DEV_DATABASE_URL, DEV_DATABASE_TEST_URL } = process.env;
 
 if (process.env.DATABASE_URL) {
