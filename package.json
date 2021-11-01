@@ -1,0 +1,33 @@
+{
+  "name": "portfolio-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
+    "migrateh": "heroku run knex migrate:latest -a portfolio-api",
+    "rollbackh": "heroku run knex migrate:rollback -a portfolio-api",
+    "databaseh": "heroku pg:psql -a portfolio-api",
+    "seedh": "heroku run knex seed:run -a portfolio-api",
+    "deploy": "git push heroku main"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "knex": "^0.95.12",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1"
+  }
+}
