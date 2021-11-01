@@ -11,7 +11,8 @@ exports.seed = function (knex) {
             "Front end app utilizing the React library, axios library to mak api calls and Material UI for styling.",
           repo: "https://github.com/blackjf85/heroes-and-villains",
           demo: "https://heroes-and-villains.vercel.app/",
-          img_url: "#",
+          img_url:
+            "https://jfb-portfolio-api.herokuapp.com/images/project-1.jpg",
         },
       ]);
     });
